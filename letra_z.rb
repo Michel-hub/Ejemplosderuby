@@ -1,12 +1,20 @@
 def letraz(n)
-    n.times do|i|
-        if i==0 || i == (n-1)
-            print "*****\n"
-        else 
-            print "  *  \n"
+    
+    i = 0
+    f = n-2
+    
+    
+    print "*****\n" 
+
+    while f>i
+        if f>i
+            puts (" " *(f-1)) + " *"
         end
-      end 
-    end
+        f -= 1
+        end
+        print "*****\n" 
+    end 
+
     
     n = ARGV[0].to_i
     letraz(n)
